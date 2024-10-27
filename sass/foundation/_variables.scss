@@ -1,0 +1,39 @@
+//---VARIABLES--- sass
+@use 'sass:color';
+
+//-animaciones-
+$ms-animation: .3s;
+
+//-padding-
+$x-p-wide-sections: 1.25rem;
+$x-p-stretch-sections: clamp(1.25rem, 0.163rem + 5.4348vw, 4.375rem);
+$y-p-sections: 20px;
+
+//-colores-
+$color-texto: #090a0f;
+$background-color: #e6e7e7;
+$red: #ed1c24;
+$white: #fefefe;
+$grey: #c4c4c5;
+
+
+//-radius-
+$corner-radius: 0.5rem;
+
+@mixin menu_button($fondo: $white, $color: $color-texto, $lighten) {
+    background: $fondo;
+    color: $color;
+    transition: background-color $ms-animation, color $ms-animation;
+    border-radius: $corner-radius;
+
+    &:hover {
+        background-color: color.adjust($fondo, $lightness: $lighten);
+        color: color.adjust($color, $lightness: 95%);
+    }
+
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    font-weight: 550;
+    padding: 0.5rem;
+    display: block;
+}

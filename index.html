@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Cruz Roja Chilena">
+  <title>Cruz Roja Chilena</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon_cruzroja.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Fuente instalada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#"><img src="/assets/img/logo-cruzroja.png" alt="Logo Cruz Roja Chilena" ></a>
+    </div>
+    <!-- Barra de Navegacion -->
+    <nav class="header__nav">
+      <div class="header__menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="header__menu">
+        <li class="header__menu-opcion">
+            <a href="#">🏠</a>
+        </li>
+        <li class="header__menu-opcion">
+            <a href="https://www.cruzroja.cl/sobre-nosotros/">
+                Nosotros
+            </a>
+        </li>
+        <li class="header__menu-opcion">
+          <a href="https://www.cruzroja.cl/voluntarios/">Direcciones Nacionales</a>
+        </li>
+        <li class="header__menu-opcion">
+          <a href="https://www.cruzroja.cl/category/noticias/">Voluntariado</a>
+        </li>
+        <li class="header__menu-opcion">
+          <a href="https://www.cruzroja.cl/category/noticias/">Documentos</a>
+        </li>
+        <li class="header__menu-opcion">
+          <a href="https://www.cruzroja.cl/category/noticias/">Prensa</a>
+        </li>
+        <li class="header__menu-opcion-dona">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.03rem" height="1.8rem" viewBox="0 0 576 512"><path fill="currentColor" d="M560 224h-29.5c-8.8-20-21.6-37.7-37.4-52.5L512 96h-32c-29.4 0-55.4 13.5-73 34.3c-7.6-1.1-15.1-2.3-23-2.3H256c-77.4 0-141.9 55-156.8 128H56c-14.8 0-26.5-13.5-23.5-28.8C34.7 215.8 45.4 208 57 208h1c3.3 0 6-2.7 6-6v-20c0-3.3-2.7-6-6-6c-28.5 0-53.9 20.4-57.5 48.6C-3.9 258.8 22.7 288 56 288h40c0 52.2 25.4 98.1 64 127.3V496c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-48h128v48c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-80.7c11.8-8.9 22.3-19.4 31.3-31.3H560c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16m-128 64c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16s-7.2 16-16 16M256 96h128c5.4 0 10.7.4 15.9.8c0-.3.1-.5.1-.8c0-53-43-96-96-96s-96 43-96 96c0 2.1.5 4.1.6 6.2c15.2-3.9 31-6.2 47.4-6.2"></svg>
+                Dona
+            </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cuerpo y Contenido -->
+  <main>
+    <section class="hero">
+      <h1 class="hero__title">
+        EL FUTURO DE LA AYUDA HUMANITARIA ESTÁ EN TUS MANOS. SÚMATE HOY.
+      </h1>
+
+      <div class="hero__slider">
+        <div class="slider__wrapper">
+          <img class="slider__image" id="slide-1" src="/assets/img/slide-1.jpg" alt="Ayuda Humanitaria" >
+          <img class="slider__image" id="slide-2" src="/assets/img/slide-2.jpg" alt="Ayuda en Colchane" >
+          <img class="slider__image" id="slide-3" src="/assets/img/slide-3.jpg" alt="Ayuda en Tiempos de Covid" >
+        </div>
+
+        <div class="slider__nav">
+          <a class="slider__nav-link" href="#slide-1"></a>
+          <a class="slider__nav-link" href="#slide-2"></a>
+          <a class="slider__nav-link" href="#slide-3"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contenido -->
+    <section class="content">
+      <h2 class="content__title">Bienvenidos a Cruz Roja Chilena</h2>
+      <p class="content__description">
+        La Cruz Roja Chilena es una organización humanitaria que busca
+        promover el bienestar de las personas, especialmente en situaciones de
+        emergencia y vulnerabilidad.
+      </p>
+
+      <!-- Pilares/columnas -->
+      <div class="content_pillars">
+        <div class="pillar">
+          <h3 class="pillar__title">Misión</h3>
+          <p class="pillar__description">
+            Brindar ayuda y promover la resiliencia en las comunidades a
+            través de proyectos y acciones humanitarias.
+          </p>
+        </div>
+        <div class="pillar">
+          <h3 class="pillar__title">Visión</h3>
+          <p class="pillar__description">
+            Ser reconocidos como una institución confiable y efectiva en la
+            atención de las personas en situación de riesgo.
+          </p>
+        </div>
+        <div class="pillar">
+          <h3 class="pillar__title">Valores</h3>
+          <p class="pillar__description">
+            Compromiso, Solidaridad, Voluntariado y Humanidad son los pilares
+            de nuestra organización.
+          </p>
+        </div>
+        <div class="pillar">
+          <h3 class="pillar__title">¿Qué hacemos?</h3>
+          <p class="pillar__description">
+            Prestamos ayuda en situaciones de emergencia, promover la salud y
+            el bienestar, y apoyar a las comunidades más vulnerables del país.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h4 class="footer__title">CONTACTO</h4>
+    <p class="footer__description">
+      Dirección: Avda. Santa María 0150, Providencia
+    </p>
+    <p class="footer__description">Teléfono: +56(2) 2783 4100</p>
+    <p class="footer__description">Email: contacto@cruzrojachilena.cl</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
